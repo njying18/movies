@@ -1,0 +1,15 @@
+<div style="text-align:center">
+  <h1>
+    {{welcomeMsg}}!
+  </h1>
+
+</div>
+<h2>Welcome to Our Movie List!</h2>
+<div>
+  <div class="movie" *ngFor="let movie of movieList">
+   <p><strong>Title: </strong>{{ movie.title }}</p>
+   <p><strong>Genre: </strong>{{ movie.genre }}</p>
+   <p><strong>Description: </strong>{{ movie.description }}</p>
+   <p><strong>Trailer: </strong><a href="">{{ movie.trailer }}</a></p>
+ </div>
+</div>
